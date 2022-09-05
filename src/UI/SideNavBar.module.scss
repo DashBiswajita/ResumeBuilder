@@ -1,0 +1,16 @@
+.sideNavBar{
+   padding: .5rem;
+   padding-right: 0;
+   border-right: 3px solid white;
+   &-navLink{
+    color: white;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    margin-right: 0;
+    &:hover, &:focus, &.active{
+        background-color: white;
+        color: black;
+        transition: all 1s;
+    }
+   }
+}
