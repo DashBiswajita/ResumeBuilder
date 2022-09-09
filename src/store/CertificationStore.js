@@ -12,7 +12,7 @@ const certificationSlice = createSlice({
         addCertification(state){
             return [...state, {
                 certificationName: "Certification",
-                validTill : "",
+                validTill : "aug, 2021",
                 summary: "",
               }];
         },

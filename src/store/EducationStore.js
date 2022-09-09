@@ -13,12 +13,12 @@ const educationSlice = createSlice({
             return [...state, {
                 uniVersityName: "University",
                 collegeName: "College",
-                degree : "",
-                stream: "",
-                startTime : "",
-                endTime: "",
-                totalDuration: "",
-                marksObtained: "",
+                degree : "BTECH",
+                stream: "EEE",
+                startTime : "APR,2021",
+                endTime: "SEPT, 2022",
+                totalDuration: "4",
+                marksObtained: "8.34 CGPA",
               }];
         },
         deleteEducation(state,modifiedObj){

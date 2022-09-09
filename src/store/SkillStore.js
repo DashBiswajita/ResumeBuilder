@@ -16,7 +16,7 @@ const skillSlice = createSlice({
             state[modifiedObj.payload.skill][modifiedObj.payload.index] = {...state[modifiedObj.payload.skill][modifiedObj.payload.index],...modifiedObj.payload.changeValue};
         },
         addSkills(state,modifiedObj){
-            state[modifiedObj.payload] = [...state[modifiedObj.payload],{skillName: "dummy", value: 0}];
+            state[modifiedObj.payload] = [...state[modifiedObj.payload],{skillName: "dummy", value: "0"}];
         },
         deleteSkills(state,modifiedObj){
             state[modifiedObj.payload.skill].splice(state[modifiedObj.payload.index],1)
