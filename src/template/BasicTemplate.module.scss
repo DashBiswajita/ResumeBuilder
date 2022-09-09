@@ -1,0 +1,61 @@
+.template-basic{
+    color: black;
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+    min-height: 100%;
+    &_sideBar{
+        background-color: rgb(9, 50, 112) ;
+        flex : 1 1 25%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap : .5rem;
+        margin: .2rem;
+        &_header{
+            justify-self: center;
+            align-self: center;
+        }
+        
+        &_personalInfo{
+           
+        }
+    }
+    &_main{
+        display: flex;
+        flex-direction: column;
+        flex : 1 1 75% ;
+        margin-right: 1rem;
+    }
+}
+.summary{
+    font-size: .7rem;
+}
+
+.intro{
+    
+}
+.sideBarHeader{
+    border-bottom: 5px solid rgb(2, 32, 77);
+    padding: .2rem;
+    font-weight: 800;
+    font-size: 1rem;
+    &-sub{
+        font-weight: 600;
+        font-size: .7rem;
+
+    }
+}
+
+.progress{
+    flex : 0 0 70%
+}
+
+.main-header{
+    color :rgb(9, 50, 112);
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-top: 1px solid rgb(2, 32, 77);
+    border-bottom: 1px solid rgb(2, 32, 77);
+}
+

@@ -9,18 +9,16 @@ import SideNavBar from "./UI/SideNavBar";
 import { useState } from "react";
 import AwardsForm from "./component/AwardsForm";
 import CertificationsForm from "./component/CertificationsForm";
+import BasicTemplate from "./template/BasicTemplate";
 function App() {
   let [activeMenu, setActiveMenu] = useState("Intro");
   let menuClickHandler = (menu) => {
     setActiveMenu(menu.iconLabel);
   };
-
   return (
-    <div
-      className={Styles.wrapper}
-      style={{ height: "100vh", overflowY: "scroll" }}
-    >
+    <div className={Styles.wrapper}>
       <SideNavBar onMenuClick={menuClickHandler}></SideNavBar>
+      <div className={Styles.formContainer}>
       <FormContainer className="h-100 form-container">
         {activeMenu === "Intro" && <IntroForm></IntroForm>}
         {activeMenu === "Social" && <SocialMediaForm></SocialMediaForm>}
@@ -32,6 +30,10 @@ function App() {
           <CertificationsForm></CertificationsForm>
         )}
       </FormContainer>
+      </div>
+      <div className={Styles.template} id='template'>
+        <BasicTemplate />
+      </div>
     </div>
   );
 }

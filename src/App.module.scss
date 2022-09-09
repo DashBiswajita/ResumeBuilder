@@ -4,4 +4,14 @@
 .wrapper{
   display: flex;
   background-color: black !important;
+  height: 100vh;
+}
+.template{
+  overflow-y: auto;
+  flex : 1 1 50%;
+  background-color: rgb(245, 239, 239) ;
+}
+.formContainer{
+  overflow-y: auto;
+  flex : 1 1 auto;
 }
