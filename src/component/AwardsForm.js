@@ -32,6 +32,7 @@ let AwardsForm = () => {
               <AccordionHeader
                 title={awr?.awardName}
                 id={ind}
+                onDeleteIconClick = {deleteAwardHandler(ind)}
               ></AccordionHeader>
               <AccordionBody id={ind}>
                  <div onChange={modifyAwardHandler(ind)}>

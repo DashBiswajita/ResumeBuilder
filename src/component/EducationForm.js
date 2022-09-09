@@ -34,6 +34,7 @@ let EducationForm = () => {
               <AccordionHeader
                 title={edu?.collegeName}
                 id={ind}
+                onDeleteIconClick = {deleteEducationHandler(ind)}
               ></AccordionHeader>
               <AccordionBody id={ind}>
                  <div onChange={modifyEducationHandler(ind)}>

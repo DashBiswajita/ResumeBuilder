@@ -29,8 +29,9 @@ let ExperienceForm = () => {
         {experiences.map((exp, ind) => (
             <Fragment key={ind}>
               <AccordionHeader
-                title={exp?.comapnyName}
+                title={exp?.companyName}
                 id={ind}
+                onDeleteIconClick = {deleteExperienceHandler(ind)}
               ></AccordionHeader>
               <AccordionBody id={ind}>
                 <div onChange={modifyExperienceHandler(ind)}>
@@ -38,8 +39,8 @@ let ExperienceForm = () => {
                   type="text"
                   id={"input_" + ind + "_1"}
                   placeholder="Enter the Comapny Name"
-                  value={exp?.comapnyName}
-                  name = "comapnyName"
+                  value={exp?.companyName}
+                  name = "companyName"
                 ></Input>
                 <Input
                   type="text"

@@ -32,6 +32,7 @@ let CertificationsForm = () => {
               <AccordionHeader
                 title={cert?.certificationName}
                 id={ind}
+                onDeleteIconClick = {deleteCertificationHandler(ind)}
               ></AccordionHeader>
               <AccordionBody id={ind}>
                 <div onChange={modifyCertificationHandler(ind)}>
