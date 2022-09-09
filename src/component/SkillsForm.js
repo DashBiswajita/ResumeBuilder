@@ -38,7 +38,7 @@ let SkillsForm = () => {
           {skills && Object.keys(skills).map((skill) => 
               <div key={skill} className={styles.skill}>
                  <h3 className='formControls_header'>{skill}</h3>
-                 {skills[skill] && skills[skill].map((val,index) =><div key={skill + "_"+index} onChange={modifySkillsHandler(skill,index)}><Input name="skillName" isremovable="true" value={val.skillName} iconClick={iconClickHandler(skill,index)}></Input><Input type="range" min="0" max="10" value={val.value}></Input></div>
+                 {skills[skill] && skills[skill].map((val,index) =><div key={skill + "_"+index} onChange={modifySkillsHandler(skill,index)}><Input name="skillName" isremovable="true" value={val.skillName} iconClick={iconClickHandler(skill,index)}></Input><Input type="range" min="0" max="100" name="value" value={val.value}></Input></div>
                  )}
                  <FontAwesomeIcon icon={faCirclePlus} color="white" onClick={addSkillsHandler(skill)} className={styles["skill-add"]}></FontAwesomeIcon>
               </div>

@@ -6,6 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-print-color-adjust: exact;
+  /* body {  } */
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -36,4 +38,13 @@ code {
 ::-webkit-scrollbar-thumb {
   background: gray;
   border-radius: 10px;
+}
+
+.bolder {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.bold {
+  font-weight: 600;
+  font-size: .9rem;
 }
